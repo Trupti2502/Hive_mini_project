@@ -1,1 +1,9 @@
+***creating table youtube**
 
+create table youtube(video_id STRING,uploader STRING,interval INT,category STRING,length INT,views INT,rating FLOAT,total_rating INT,comments INT,related_id STRING) row format delimited fields terminated by ',' stored as textfile;
+
+
+
+***Loading data in table youtube***
+
+LOAD DATA LOCAL INPATH '/home/cloudera/Desktop/youtube/youtube.csv' OVERWRITE INTO TABLE youtube1;
