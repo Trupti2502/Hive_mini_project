@@ -1,0 +1,12 @@
+
+1)Find out the top 5 categories with maximum number of videos uploaded. 
+select category,count(*) as vid_count from youtube1 group by category sort by vid_count desc limit 5;
+
+
+
+2) Find out the top 10 rated videos. 
+select video_id,views FROM youtube1 sort by views desc limit 7; 
+
+
+3) Find out the most viewed videos. 
+select video_id,total_rating FROM youtube1 sort by total_rating desc LIMIT 10;
